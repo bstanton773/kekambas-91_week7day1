@@ -320,3 +320,42 @@ console.log(newerArr === ['cat', 'dog', 'pig']);
 console.log(5 != '5');
 console.log(5 !== '5');
 console.clear();
+
+
+// Control Flow
+
+// if (condition expression){code to execute if true};
+
+let newNumber = 70;
+console.log('Begin');
+
+if (newNumber > 65){
+    console.log('Senior');
+} else if (newNumber > 25){
+    console.log('Adult');
+} else {
+    console.log('Child');
+}
+console.log('End');
+
+
+// Ternary Operator - (condition) ? value if true : value if false
+
+let ageGroup = (newNumber > 18) ? 'Adult' : 'Child';
+console.log(ageGroup);
+
+let ageGroup2 = (newNumber > 65) ? 'Senior' : (newNumber > 25) ? 'Adult' : 'Child';
+console.log(ageGroup2);
+
+// && - and
+// || - or
+newNumber = 30
+if (newNumber > 18 && newNumber < 40){
+    console.log('Young Adult');
+};
+
+if (newNumber < 18 || newNumber > 65){
+    console.log('You get a discount')
+}
+
+console.clear()
