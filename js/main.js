@@ -280,3 +280,43 @@ console.clear();
     JavaScript Comparisons
 */
 
+console.log(5 == 5);
+console.log(5 == 5.0);
+console.log(5 == '5');
+console.log(5 === '5');
+// == checks for equality while allowing for type conversion 
+// === checks for equality does not allow for type conversion
+
+console.log(1 == true);
+
+console.log('10' < 5);
+
+// be careful with type conversions!
+let x = '10';
+let y = '9';
+
+console.log(x > y); // x and y are both strings, no conversion needed, compares alphabetically!
+
+
+// When JavaScript compares objects, it looks for REFERENCE ONLY
+let arr1 = [1, 2, 3, 4];
+let arr2 = [1, 2, 3, 4];
+
+console.log(arr1 == arr2); 
+console.log(arr1 === arr2);
+
+
+let newArr = ['cat', 'dog', 'pig'];
+
+let newerArr = newArr;
+
+console.log(newArr === newerArr);
+console.log(newArr === ['cat', 'dog', 'pig']);
+console.log(newerArr === ['cat', 'dog', 'pig']);
+
+// Greater Than (>), Greater Than or Equal (>=), Less Than (<), Less Than or Equal (<=)
+// Equal allow type conversion (==), Equal no type conversion (===), 
+// Not Equal yes conversion (!=), Not Eqaul no conversion (!==)
+console.log(5 != '5');
+console.log(5 !== '5');
+console.clear();
