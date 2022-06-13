@@ -359,3 +359,86 @@ if (newNumber < 18 || newNumber > 65){
 }
 
 console.clear()
+
+
+/* 
+    JavaScript Loops
+    for, for...in, for...of, while, do while
+*/
+
+// Standard For Loop
+// for (counter; expression/condition; incrementation/decrementation for counter){code to execute each loop}
+
+console.log('Loop has started');
+
+for(let i = 0; i <= 20; i++){
+    console.log(i);
+};
+
+console.log('Loop has ended');
+
+let colors = ['red', 'orange', 'yellow', 'green']
+
+for (let i = 0; i < colors.length; i++){
+    console.log(i, colors[i])
+}
+
+for(let i = 20; i >= 0; i-=2){
+    console.log(i);
+};
+
+
+
+// for...in  -- used to loop over the properties of an object
+let teams = {
+    mlb: 'White Sox',
+    nba: 'Bulls',
+    nfl: 'Bears',
+    nhl: 'Blackhawks'
+}
+
+for (let t in teams){
+    console.log(t)
+    console.log(teams[t])
+};
+
+
+// for...of  -- used to loop over the elements in an Array
+let planets = ['Mercury', 'Mars', 'Earth', 'Venus', 'Jupiter']
+
+for (let p of planets){
+    console.log(p);
+};
+
+for (let p in planets){
+    console.log(p);
+    console.log(planets[p])
+};
+
+
+// While loop
+// while (condition){code to execute while condition is true}
+
+let num1 = 1;
+
+while (num1 < 10){
+    console.log(num1);
+    num1++;
+}
+
+
+
+// Do While Loop.... Do the first portion AT LEAST ONCE
+// If the while condition is still true, continue the while loop
+// do {code to execute} while (condition)
+
+let k = 1;
+
+do {
+    k *= 2;
+    console.log(k);
+} while (k < 10);
+
+// do {
+//     var firstName = prompt('What is your name?')
+// } while (firstName !== 'Brian');
